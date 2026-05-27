@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AdminApp</string>
+    <string name="title_activity_main">AdminApp</string>
+    <string name="package_name">com.eventhub.admin</string>
+    <string name="custom_url_scheme">com.eventhub.admin</string>
+</resources>
