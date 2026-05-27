@@ -1,0 +1,163 @@
+
+--- 2026-05-11T08:05:20.765Z ---
+TITLE: full stack web event
+BODY: {
+  "roadmap": "[{\"day\":\"day 1\",\"title\":\"asdfghjkl\",\"description\":\"cccccccccccccccccccccccccccccccccccccccccccccccccccc\"}]",
+  "title": "full stack web event",
+  "description": "Full-stack development refers to the process of building both the front-end (the part users see) and the back-end (the behind-the-scenes logic and database) of a software application. ",
+  "type": "online",
+  "date": "2026-05-14",
+  "endDate": "2026-05-16",
+  "time": "09:20",
+  "endTime": "15:34",
+  "location": "Kongu Engineering College",
+  "registrationLimit": "20",
+  "registrationCloseDate": "2026-05-13",
+  "isApprovalRequired": "true",
+  "isPaid": "false",
+  "price": "",
+  "requiredSkills": "full stack mern",
+  "contactPerson": "Keerthana (student event coordinator)",
+  "contactEmail": "keerthana@gmail.com",
+  "contactPhone": "+91 98765 43210",
+  "coverMedia": {}
+}
+
+--- 2026-05-11T10:02:58.476Z ---
+TITLE: Byts full stack workshop
+BODY: {
+  "roadmap": "[{\"day\":\"day 1-14/05/26\",\"title\":\"event starts at convention centre near polytechnic college\",\"description\":\"TEDx is a grassroots initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe through TEDx events. \"},{\"day\":\"day 2-15/05/26\",\"title\":\"event ends\",\"description\":\"TEDx is a grassroots initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe through TEDx events. \"}]",
+  "title": "Byts full stack workshop",
+  "description": "Full-stack development refers to the process of building both the front-end (the part users see) and the back-end (the behind-the-scenes logic and database) of a software application. A full-stack developer is a versatile professional who can handle the entire \"stack\" of technologies required to get a product from a design concept to a fully functional, deployed application. ",
+  "type": "online",
+  "date": "2026-05-14",
+  "endDate": "2026-05-15",
+  "time": "05:27",
+  "endTime": "19:28",
+  "location": "KEC",
+  "registrationLimit": "160",
+  "registrationCloseDate": "2026-05-13",
+  "isApprovalRequired": "true",
+  "isPaid": "false",
+  "price": "",
+  "requiredSkills": "React,mongodb",
+  "contactPerson": "malini (student event coordinator)",
+  "contactEmail": "malini@gmail.com",
+  "contactPhone": "+91 98765 43210",
+  "coverMedia": {}
+}
+
+--- 2026-05-12T06:13:37.354Z ---
+TITLE: Techical talk
+BODY: {
+  "roadmap": "[{\"day\":\"Day 1\",\"title\":\"Hjjj\",\"description\":\"Ggĥjjjkkkkkkk\"}]",
+  "title": "Techical talk",
+  "description": "Dimensional Modeling\r\nGiven this book’s focus for the fi rst 16 chapters, we won’t spend any time discuss\u0002ing dimensional modeling techniques here. The next chapter provides detailed \r\nrecommendations about the participants, process, and deliverables surrounding our \r\niterative workshop approach for designing dimensional models in collaboration with \r\nbusiness users. It’s required reading for anyone involved in the modeling activity.\r\nPhysical Design\r\nThe dimensional models developed and documented via a preliminary source-to\u0002target mapping need to be translated into a physical database. With dimensional \r\nmodeling, the logical and physical designs bear a close resemblance; you don’t \r\nwant the database administrator to convert your lovely dimensional schema into a \r\nnormalized structure during the physical design process.\r\nPhysical database implementation details vary widely by platform and project. \r\nIn addition, hardware, software, and tools are evolving rapidly, so the following \r\nphysical design activities and considerations merely scratch the surface.\r\nDevelop Naming and Database Standards\r\nTable and column names are key elements of the users’ experience, both for navi\u0002gating the data model and viewing BI applications, so they should be meaningful \r\nto the business. You must also establish standards surrounding key declarations \r\nand the permissibility of nulls.\r\nKimball DW/BI Lifecycle Overview 421\r\nDevelop Physical Database Model\r\nThis model should be initially built in the development server where it will be used \r\nby the ETL development team. There are several additional sets of tables that need \r\nto be designed and deployed as part of the DW/BI system, including staging tables to \r\nsupport the ETL system, auditing tables for ETL processing and data quality, and \r\nstructures to support secure access to a subset of the data warehouse.\r\nDevelop Initial Index Plan\r\nIn addition to understanding how the relational database’s query optimizer \r\nand indexes work, the database administrator also needs to be keenly aware that \r\nDW/BI requirements diff er signifi cantly from OLTP requirements. Because dimen\u0002sion tables have a single column primary key, you’ll have a unique index on that \r\nkey. If bitmapped indexes are available, you typically add single column bitmapped \r\nindexes to dimension attributes used commonly for fi ltering and grouping, espe\u0002cially those attributes that will be jointly constrained; otherwise, you should evalu\u0002ate the usefulness of B-tree indexes on these attributes. Similarly, the fi rst fact table \r\nindex will typically be a B-tree or clustered index on the primary key; placing the \r\ndate foreign key in the index’s leading position speeds both data loads and queries \r\nbecause the date is frequently constrained. If the DBMS supports high-cardinality \r\nbitmapped indexes, these can be a good choice for individual foreign keys in the \r\nfact tables because they are more agnostic than clustered indexes when the user \r\nconstrains dimensions in unexpected ways. The determination of other fact table \r\nindexes depends on the index options and optimization strategies within the plat\u0002form. Although OLAP database engines also use indexes and have a query optimizer, \r\nunlike the relational world, the database administrator has little control in these \r\nenvironments.\r\nDesign Aggregations, Including OLAP Database\r\nContrary to popular belief, adding more hardware isn’t necessarily the best weapon \r\nin the performance-tuning arsenal; leveraging aggregate tables is a far more cost\u0002eff ective alternative. Whether using OLAP technology or relational aggregation \r\ntables, aggregates need to be designed in the DW/BI environment, as we’ll further \r\nexplore in Chapter 19: ETL Subsystems and Techniques, and Chapter 20. When \r\nperformance metrics are aggregated, you either eliminate dimensions or associate \r\nthe metrics with a shrunken rollup dimension that conforms to the atomic base \r\ndimension. Because you can’t possibly build, store, and administer every theoreti\u0002cal aggregation, two primary factors need to be evaluated. First, think about the \r\nbusiness users’ access patterns derived from the requirements fi ndings, as well as \r\nfrom input gained by monitoring actual usage patterns. ",
+  "type": "online",
+  "date": "2026-05-21",
+  "endDate": "2026-05-29",
+  "time": "09:42",
+  "endTime": "16:00",
+  "location": "Chennai",
+  "registrationLimit": "20",
+  "registrationCloseDate": "2026-05-15",
+  "isApprovalRequired": "true",
+  "isPaid": "false",
+  "price": "",
+  "requiredSkills": "Ai ",
+  "contactPerson": "Janani",
+  "contactEmail": "janani6002@gmail.com",
+  "contactPhone": "9999977777"
+}
+
+--- 2026-05-21T14:46:39.042Z ---
+TITLE: internship
+BODY: {
+  "roadmap": "[{\"day\":\"day1 \",\"title\":\"registeration\",\"description\":\"starts \"},{\"day\":\"day2\",\"title\":\"login process\",\"description\":\"internship starts\"}]",
+  "title": "internship",
+  "description": "Internship for college students",
+  "type": "offline",
+  "date": "2026-05-25",
+  "endDate": "2026-05-30",
+  "time": "09:00",
+  "endTime": "16:00",
+  "location": "KEC",
+  "registrationLimit": "50",
+  "registrationCloseDate": "2026-05-22",
+  "isApprovalRequired": "true",
+  "isPaid": "false",
+  "price": "",
+  "requiredSkills": "React,Mern",
+  "contactPerson": "janani",
+  "contactEmail": "janani@gmail.com",
+  "contactPhone": "8889995678"
+}
+
+--- 2026-05-24T12:09:37.919Z ---
+TITLE: SummitQuest
+BODY: {
+  "roadmap": "[{\"day\":\"Day 1\",\"title\":\"Morning Presentation\",\"description\":\"SummitQuest 2026 is the premier gathering for forward-thinking leaders, tech innovators, and industry pioneers. Over [Number] action-packed days, attendees will embark on a collaborative journey to scale businesses,\"},{\"day\":\"Day 2\",\"title\":\"Prize Distribution\",\"description\":\" Engage in hands-on workshops covering UI/UX strategies, React scaling architectures, and modern leadership frameworks led by global industry experts.\"}]",
+  "title": "SummitQuest",
+  "description": "Summit: Represents the peak of success, high-level executive meetings, and top-tier industry knowledge.Quest: Implies a journey, active problem-solving, and a collective pursuit of innovation or growth.",
+  "type": "online",
+  "date": "2026-06-01",
+  "endDate": "2026-06-03",
+  "time": "09:00",
+  "endTime": "16:30",
+  "location": "McCormick Place (Chicago)",
+  "registrationLimit": "30",
+  "registrationCloseDate": "2026-05-26",
+  "isApprovalRequired": "true",
+  "isPaid": "false",
+  "price": "",
+  "requiredSkills": "react, UI Design, Leadership",
+  "contactPerson": "Ramesh",
+  "contactEmail": "ramesh@gmail.com",
+  "contactPhone": "8807777342"
+}
+
+--- 2026-05-24T12:14:06.768Z ---
+TITLE: SkillFied Mentor
+BODY: {
+  "roadmap": "[{\"day\":\"Day1\",\"title\":\"Basecamp & Vision\",\"description\":\" Kick off the summit with executive keynotes mapping out industry trends, followed by an evening icebreaker networking session to align teams and set objectives.\"}]",
+  "title": "SkillFied Mentor",
+  "description": "Collaborate on actionable business roadmaps, present group innovations to executive judges, and celebrate milestones at the closing VIP gala.",
+  "type": "offline",
+  "date": "2026-06-02",
+  "endDate": "2026-06-02",
+  "time": "09:30",
+  "endTime": "16:40",
+  "location": "Chennai",
+  "registrationLimit": "150",
+  "registrationCloseDate": "2026-05-26",
+  "isApprovalRequired": "false",
+  "isPaid": "true",
+  "price": "149",
+  "requiredSkills": "react, UI Design",
+  "contactPerson": "MAHESHWARI K",
+  "contactEmail": "maheshwarikalees16@gmail.com",
+  "contactPhone": "9997878786"
+}
+
+--- 2026-05-24T12:19:06.567Z ---
+TITLE: Aadhar seeding program
+BODY: {
+  "roadmap": "[{\"day\":\"Onboarding & KYC Verification\",\"title\":\"Document Collection & Fingerprint Verification\",\"description\":\" Citizens submit physical consent forms alongside self-attested photocopies of their Aadhaar cards and bank passbooks for identity cross-verification.\"}]",
+  "title": "Aadhar seeding program",
+  "description": "An Aadhaar Seeding Program is a public welfare initiative aimed at linking citizens' 12-digit Aadhaar numbers to their respective bank accounts, welfare cards, or public distribution IDs. This process maps their identification directly into the National Payments Corporation of India (NPCI) mapper database, enabling secure Direct Benefit Transfers (DBT) like subsidies, pensions, and scholarships without leakage",
+  "type": "offline",
+  "date": "2026-06-03",
+  "endDate": "2026-06-03",
+  "time": "09:02",
+  "endTime": "16:45",
+  "location": "Kongu Engineering College",
+  "registrationLimit": "200",
+  "registrationCloseDate": "2026-05-27",
+  "isApprovalRequired": "true",
+  "isPaid": "false",
+  "price": "",
+  "requiredSkills": "Data Entry, Public Grievance Redressal, NPCI Mapper Management, Biometric Device Operation",
+  "contactPerson": "MAHESHWARI K",
+  "contactEmail": "maheshwarikalees16@gmail.com",
+  "contactPhone": "8807777342"
+}
